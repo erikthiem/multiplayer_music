@@ -1,6 +1,6 @@
-# Interactive Dots
+# Multiplayer Music
 
-Make interactive dot artwork with friends!
+Make music with friends!
 
 ## Installation/Use
 

@@ -1,6 +1,6 @@
 <div class="introtext">
-  <h1>Interactive Dots</h1>
+  <h1>Multiplayer Music</h1>
   <form action="/<%= roomid() %>">
-    <input type="submit" value="New Canvas" />
+    <input type="submit" value="New Session" />
   </form>
 </div>
