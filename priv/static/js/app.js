@@ -2839,11 +2839,8 @@ var App = function () {
       socket.connect({ user_id: "123" });
       var $roomid = $("#roomid").val();
       var $status = $("#status");
-      var $dots = $("#dots");
-      var $circleColorInput = $("#circle-color-input");
       var $input = $("#circle-input");
       var $username = $("#username");
-      var circleColor = "green";
 
       socket.onOpen(function (ev) {
         return console.log("OPEN", ev);
@@ -2871,24 +2868,20 @@ var App = function () {
       });
 
       $input.on("click", function (e) {
-        chan.push("new:msg", { user: $username.val(), body: circleColor });
+        chan.push("new:msg", { user: $username.val() });
         $input.val("");
       });
 
-      $circleColorInput.on("keyup", function (e) {
-        circleColor = $circleColorInput.val();
-        $input.css("background-color", circleColor);
-      });
-
       chan.on("new:msg", function (msg) {
-        $dots.append("<div class='dot' id='dot-" + msg.user + "' style='background-color: " + msg.body + "; opacity: 0.2;'></div>");
-        scrollTo(0, document.body.scrollHeight);
+        var snd = new Audio("/sounds/drum.mp3");
+        snd.play();
+        console.log("button clicked");
       });
 
       chan.on("user:entered", function (msg) {
         if (msg.user) {
           var username = _this.sanitize(msg.user);
-          $dots.append("<div class='dot' id='dot-" + username + "' style='background-color: white; border: 1px solid black;'></div>");
+          console.log("user ${username} entered");
         }
       });
     }
