@@ -1,0 +1,6 @@
+<div class="introtext">
+  <h1>Interactive Dots</h1>
+  <form action="/<%= roomid() %>">
+    <input type="submit" value="New Canvas" />
+  </form>
+</div>

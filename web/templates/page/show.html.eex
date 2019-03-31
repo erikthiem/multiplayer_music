@@ -1,0 +1,7 @@
+<input id="roomid" value="<%= @conn.params["roomid"] %>" hidden />
+<div id="inputform">
+  <h1>Type a color, then click</h1>
+  <input id="username" value="<%= dotid()%>" type="hidden">
+  <input id="circle-color-input" value="green"/>
+  <div id="circle-input"></div>
+</div>

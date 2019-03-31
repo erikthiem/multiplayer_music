@@ -1,0 +1,10 @@
+<input id="roomid" value="<%= @conn.params["roomid"] %>" hidden />
+<div class="introtext">
+  <h1>Interactive Dots</h1>
+  <h3>To join, visit
+    <a href="<%= Chat.Endpoint.url() %>/<%= @conn.params["roomid"] %>/join" target="_blank">
+      <%= Chat.Endpoint.url() %>/<%= @conn.params["roomid"] %>/join
+    </a>
+  on a mobile phone</h3>
+</div>
+<div id="dots" class="container"></div>
