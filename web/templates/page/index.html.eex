@@ -8,3 +8,4 @@
   on a mobile phone</h3>
 </div>
 <div id="dots" class="container"></div>
+<script src="<%= static_path(@conn, "/js/host.js") %>"></script>

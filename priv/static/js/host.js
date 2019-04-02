@@ -2807,7 +2807,7 @@ Object.defineProperty(exports, "__esModule", {
 });
  }});
 if(typeof(window) === 'object' && !window.Phoenix){ window.Phoenix = require('phoenix') };
-require.register("web/static/js/app", function(exports, require, module) {
+require.register("web/static/js/host", function(exports, require, module) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2910,5 +2910,5 @@ $(function () {
 exports.default = App;
 });
 
-;require('web/static/js/app');
-//# sourceMappingURL=app.js.map
+;require('web/static/js/host');
+//# sourceMappingURL=host.js.map

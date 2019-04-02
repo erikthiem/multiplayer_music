@@ -3,3 +3,4 @@
   <input id="username" value="<%= dotid()%>" type="hidden">
   <div id="circle-input"></div>
 </div>
+<script src="<%= static_path(@conn, "/js/client.js") %>"></script>
